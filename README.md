@@ -1,1 +1,1 @@
-"# ArtCSS--Lamp-v1" 
+# ArtCSS--Lamp-v1
