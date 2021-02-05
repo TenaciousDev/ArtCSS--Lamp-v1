@@ -1,0 +1,95 @@
+* {
+  position: relative;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.lamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shade {
+  width: 30vh;
+  height: 18vh;
+  background-color: rgb(238, 228, 207);
+  z-index: 3;
+  border-radius: 50% / 10%;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  background-image: radial-gradient(
+      closest-corner at 50% 2%,
+      rgb(238, 228, 207) 70%,
+      transparent 78%
+    ),
+    linear-gradient(
+      to right,
+      transparent 48%,
+      rgba(255, 255, 255, 0.4) 58% 75%,
+      transparent 88%
+    ),
+    linear-gradient(
+      -253deg,
+      rgba(255, 255, 255, 0.8),
+      rgb(229, 203, 154) 15%,
+      rgb(219, 185, 124) 20%,
+      rgb(237, 219, 183) 36%,
+      rgba(255, 255, 255, 0.2) 54%,
+      transparent 95%
+    ),
+    linear-gradient(253deg, rgb(248, 239, 221) 20%, transparent);
+}
+
+.leg {
+  width: 2vh;
+  height: 50vh;
+  background: rgb(153, 81, 54);
+  top: -2vh;
+  z-index: 2;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.267),
+      transparent 20% 99.8%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(
+      to right,
+      transparent 15%,
+      rgba(0, 0, 0, 0.333) 36% 44%,
+      rgba(0, 0, 0, 0.067) 60%,
+      rgba(255, 255, 255, 0.31) 78% 95%,
+      rgb(155, 85, 57) 95%
+    );
+}
+
+.foot {
+  width: 22vh;
+  height: 5vh;
+  background: rgb(153, 81, 54);
+  top: -4vh;
+  border-radius: 50%;
+  box-shadow: 0 0.4vh rgb(119, 51, 33);
+  background-image: linear-gradient(
+      to right,
+      transparent 11vh,
+      transparent 12vh,
+      transparent 13vh
+    ),
+    linear-gradient(
+      40deg,
+      transparent 5% 24%,
+      rgba(0, 0, 0, 0.122) 28% 36%,
+      rgba(0, 0, 0, 0.067) 37% 44%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.11) 56%,
+      rgba(255, 255, 255, 0.267) 68%,
+      rgba(255, 255, 255, 0.11) 92%,
+      transparent
+    );
+}
